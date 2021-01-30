@@ -16,7 +16,7 @@
         body {
             font: 16px Helvetica, Sans-Serif;
             line-height: 24px;
-            background: url(noise.jpg);
+            background: url(images/noise.jpg);
         }
 
         #page-wrap {
@@ -26,13 +26,6 @@
             margin: 40px auto;
             border-radius: 10px;
             box-shadow: 5px 5px 50px #00000070;
-        }
-
-        #pic {
-            float: right;
-            width: 240px;
-            border-radius: 10px;
-            box-shadow: 5px 5px 10px #00000020;
         }
 
         h1 {
@@ -54,6 +47,13 @@
             margin: 0 0 16px 0;
         }
 
+        #pic {
+            float: right;
+            width: 240px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #00000020;
+        }
+
         #objective {
             width: 520px;
             float: left;
@@ -70,29 +70,28 @@
             clear: both;
         }
 
-        dd {
-            width: 600px;
-            float: right;
-            border-left: 1px solid #BBB;
-            padding: 0 0 0 25px;
-        }
-
-        dd.clear {
-            border: none;
-            float: none;
-            margin: 0;
-        }
-
-
         dt {
             color: #DD2C00;
             font-style: italic;
             font-weight: bold;
             font-size: 18px;
             text-align: right;
-            width: 150px;
+            width: 160px;
             float: left;
             height: 100%;
+        }
+
+        dd {
+            width: 600px;
+            float: right;
+            border-left: 1px solid #BBB;
+            padding: 0 0 0 20px;
+        }
+
+        dd.clear {
+            border: none;
+            float: none;
+            margin: 0;
         }
 
         h2 {
@@ -112,6 +111,14 @@
             font-weight: normal;
         }
 
+        .mylinks {
+            margin: 0 0 16px 0;
+        }
+
+        .mylinks td {
+            padding: 0 4px 0 0;
+        }
+
         .mylinks a {
             color: #666;
             text-decoration: none;
@@ -127,15 +134,17 @@
             margin: 0 0 32px 16px;
         }
 
-        .icons {
-            width: 40px;
-            margin-right: 25px;
-            padding: 10px 0;
-            border-bottom: 2px solid #00000000
+        .icons a {
+            margin: 0 20px 0 0;
+            padding: 0 0 4px 0;
         }
 
-        .icons:hover {
+        .icons a:hover {
             border-bottom: 2px solid #DD2C00
+        }
+
+        .icons img {
+            width: 40px;
         }
     </style>
 </head>
@@ -144,16 +153,20 @@
 
     <div id="page-wrap">
 
-        <img src="shayak.jpg" alt="Photo of Shayak" id="pic" />
+        <img src="images/shayak.jpg" alt="Photo of Shayak" id="pic" />
 
-        <div class="vcard">
-
+        <div>
             <h1>Md Anisuzzaman Shayak <br><span>Mobile and Web Applications Developer</span></h1>
-
-            <p class="mylinks">
-                <strong>Phone : </strong><a class="tel" href="tel:+8801983180596">+880 1983-180596</a><br>
-                <strong>Email : </strong><a class="email" href="mailto:shayakanis@gmail.com">shayakanis@gmail.com</a>
-            </p>
+            <table class="mylinks">
+                <tr>
+                    <td><strong>Phone : </strong></td>
+                    <td><a class="tel" href="tel:+8801983180596">+880 1983-180596</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Email : </strong></td>
+                    <td><a class="email" href="mailto:shayakanis@gmail.com">shayakanis@gmail.com</a></td>
+                </tr>
+            </table>
         </div>
 
         <div id="objective">
@@ -228,27 +241,51 @@
 
             <dt>Contacts</dt>
             <dd>
-                <p class="mylinks">
-                    <strong>Phone : </strong><a class="tel" href="tel:+8801983180596">+880 1983-180596</a><br>
-                    <strong>Email : </strong>
-                    <a class="email" href="mailto:shayakanis@gmail.com">shayakanis@gmail.com</a>
-                    &emsp;<a class="email" href="mailto:shayak15-1988@diu.edu.bd">shayak15-1988@diu.edu.bd</a><br>
-                </p>
+                <table class="mylinks">
+                    <tr>
+                        <td><strong>Phone : </strong></td>
+                        <td><a href="tel:+8801983180596">+880 1983-180596</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="tel:+8801831267627">+880 1831-267627</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Email : </strong></td>
+                        <td><a href="mailto:shayakanis@gmail.com">shayakanis@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="mailto:azshayak@gmail.com">azshayak@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="mailto:shayak15-1988@diu.edu.bd">shayak15-1988@diu.edu.bd</a></td>
+                    </tr>
+                </table>
                 <strong>Current address : </strong>Grap-Town, Dattapara, Ashulia, Savar, Dhaka.<br>
                 <strong>Permanent address : </strong>Public Hall Road, Bhaluka Pourashava, Mymensingh.<br><br>
 
-                Visit my social media pages<br>
-                <a href="https://www.facebook.com/azshayak"><img src="ic-fb.png" alt="logo" class="icons"></a>
-                <a href="https://twitter.com/AzShayak"><img src="ic-twt.png" alt="logo" class="icons"></a>
-                <a href="https://www.instagram.com/az_shayak/"><img src="ic-ig.png" alt="logo" class="icons"></a>
-                <a href="https://www.youtube.com/channel/UCEkiK8GcIabv-roUntEkbGg"><img src="ic-yt.png"
-                        alt="logo" class="icons"></a>
-                <a href="https://github.com/AzShayak"><img src="ic-gh.png" alt="logo" class="icons"></a>
-                <a href="https://www.linkedin.com/in/anisuzzaman-shayak-6001b4180/"><img src="ic-in.png"
-                        alt="logo" class="icons"></a>
+                Visit my social media pages<br><br>
+                <div class="icons">
+                    <a href="https://www.facebook.com/azshayak">
+                        <img src="images/ic-fb.png" alt="logo"></a>
+                    <a href="https://twitter.com/AzShayak">
+                        <img src="images/ic-twt.png" alt="logo"></a>
+                    <a href="https://www.instagram.com/az_shayak/">
+                        <img src="images/ic-ig.png" alt="logo"></a>
+                    <a href="https://www.youtube.com/channel/UCEkiK8GcIabv-roUntEkbGg">
+                        <img src="images/ic-yt.png" alt="logo"></a>
+                    <a href="https://github.com/AzShayak">
+                        <img src="images/ic-gh.png" alt="logo"></a>
+                    <a href="https://www.linkedin.com/in/anisuzzaman-shayak-6001b4180/">
+                        <img src="images/ic-in.png" alt="logo"></a>
+                </div>
             </dd>
         </dl>
+
         <div class="clear"></div>
+
     </div>
 
 </body>
